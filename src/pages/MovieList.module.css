@@ -1,0 +1,137 @@
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 16px 30px;
+}
+
+.top {
+    display: grid;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.head {
+    display: grid;
+    gap: 4px;
+}
+
+.title {
+    margin: 0;
+    color: white;
+    font-size: 26px;
+}
+
+.subtitle {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.controls {
+    display: grid;
+    gap: 12px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tab,
+.tabActive {
+    border-radius: 999px;
+    padding: 8px 12px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.tabActive {
+    background: rgba(59, 130, 246, 0.18);
+    border-color: rgba(59, 130, 246, 0.35);
+    color: white;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input {
+    flex: 1;
+    border-radius: 14px;
+    padding: 10px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.04);
+    color: white;
+    outline: none;
+}
+
+.input:focus {
+    border-color: rgba(59, 130, 246, 0.45);
+}
+
+.clear {
+    border-radius: 14px;
+    padding: 10px 12px;
+    font-weight: 800;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.clear:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.content {
+    display: grid;
+    gap: 14px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 14px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 6px;
+}
+
+.pageBtn {
+    border-radius: 12px;
+    padding: 10px 12px;
+    font-weight: 800;
+    cursor: pointer;
+    background: rgba(59, 130, 246, 0.16);
+    border: 1px solid rgba(59, 130, 246, 0.28);
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.pageBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pageInfo {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.error {
+    padding: 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(239, 68, 68, 0.25);
+    background: rgba(239, 68, 68, 0.08);
+    color: rgba(255, 255, 255, 0.9);
+}

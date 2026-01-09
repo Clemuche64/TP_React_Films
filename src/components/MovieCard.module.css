@@ -1,0 +1,100 @@
+.card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+    transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(59, 130, 246, 0.30);
+}
+
+.posterLink {
+    display: block;
+    aspect-ratio: 2 / 3;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.noPoster {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.body {
+    padding: 12px 12px 14px;
+    display: grid;
+    gap: 10px;
+}
+
+.title {
+    margin: 0;
+    font-size: 15px;
+    color: white;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+}
+
+.vote {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.detailsBtn,
+.wishOff,
+.wishOn {
+    flex: 1;
+    border-radius: 12px;
+    padding: 8px 10px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    text-align: center;
+    text-decoration: none;
+}
+
+.detailsBtn {
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.10);
+}
+
+.wishOff {
+    background: rgba(59, 130, 246, 0.16);
+    color: rgba(255, 255, 255, 0.95);
+    border-color: rgba(59, 130, 246, 0.28);
+}
+
+.wishOn {
+    background: rgba(239, 68, 68, 0.12);
+    color: rgba(255, 255, 255, 0.95);
+    border-color: rgba(239, 68, 68, 0.25);
+}

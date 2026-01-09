@@ -1,0 +1,63 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(10, 14, 22, 0.78);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link,
+.active {
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.link {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.active {
+    color: white;
+    background: rgba(59, 130, 246, 0.14);
+    border: 1px solid rgba(59, 130, 246, 0.28);
+}
+
+.badge {
+    margin-left: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    height: 22px;
+    padding: 0 7px;
+    border-radius: 999px;
+    background: rgba(59, 130, 246, 0.22);
+    border: 1px solid rgba(59, 130, 246, 0.35);
+    font-size: 12px;
+}
